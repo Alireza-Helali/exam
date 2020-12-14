@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div style="display: block">
+    {% for question in questions %}
+        <a href="{{ question.get_absolute_url }}">{{ question.id }}-{{ question }}</a><br>
+    {% endfor %}
+</div>
+
+</body>
+</html>

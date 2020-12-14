@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>{{ question }}</div>
+<form action="">
+    <p>{{ question.question }}</p>
+    {% for answer in question.answer_set.all %}
+        <input type="radio" id="{{ forloop.counter0 }}" name="question" value="{{ answer }}">
+        <label for="{{ forloop.counter0 }}">{{ answer }}</label><br>
+    {% endfor %}
+</form>
+
+</body>
+</html>

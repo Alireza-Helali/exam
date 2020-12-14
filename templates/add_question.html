@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<form action="">
+    <input type="text" placeholder="تعداد جواب ها" name="answer">
+</form>
+<br>
+
+<form action="" method="get">
+    {% csrf_token %}
+    {{ form }}
+</form>
+
+</body>
+</html>
